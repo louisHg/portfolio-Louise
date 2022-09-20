@@ -6,6 +6,7 @@ script.src = "https://unpkg.com/sweetalert/dist/sweetalert.min.js";
 document.body.appendChild(script);
 
 // Header
+// Navbar composant js fixe ici
 
 let header = $(`
 <nav class="navbar navbar-expand-lg fixed-top dark-theme" id="navbar">
@@ -35,6 +36,7 @@ let header = $(`
    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-80 0 650 400" preserveAspectRatio="xMinYMin meet">
      <rect/>
      <g>
+    //A supprimer peut être (homme en velo quand mode telephone)
        <g id="man-bike">
          <path id="Vector_2" opacity="0.1" d="M201.091 276.806L179.893 255.76L173.269 262.513L194.467 283.559L201.091 276.806Z" fill="black" />
          <path id="Vector_3" opacity="0.05" d="M269.455 177.344C269.455 177.344 326.601 189.531 325.92 197.189C325.238 204.847 268.194 187.328 268.194 187.328C268.194 187.328 264.731 181.519 269.455 177.344Z" fill="black" />
@@ -108,6 +110,7 @@ let header = $(`
 </nav>`);
 
 // Footer
+// Ici est a faire le form js pour envoyer un email
 
 let footer = $(`
 <footer class="footer sticky-bottom"  style="background-color:#2b2a2a;">
@@ -436,6 +439,7 @@ $(window).on("load", function() {
 });
 
 //send button animation
+//if an error on somethings else
 
 
 $(function submitAnimation() {
