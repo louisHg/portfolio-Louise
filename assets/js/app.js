@@ -65,10 +65,10 @@ let footer = $(`
              <div class="form-header">
                 <h6 class="display">Get in Touch</h6>
               </div>
-                <form name="form1" action="https://formcarry.com/s/BywEPAJNb" method="POST" accept-charset="UTF-8" >
-                  <input id="name" type="text" name="name" placeholder="Your Name" required/>
-                  <input id="email" type="email" name="email" placeholder="Email Address" required/>                  
-                  <textarea id="textArea" name="message" placeholder="Type your Message" required></textarea>
+                <form name="form1" action="https://script.google.com/macros/s/AKfycbxj2qw8HnlVAZ61AZAUj9I8HMmUsPflBBA14NM7gRgO19Z7U29uXtkFKqSRw0oQz_rk_w/exec" method="POST" accept-charset="UTF-8" >
+                  <input id="nom" type="text" name="nom" placeholder="Votre nom" required/>
+                  <input id="email" type="email" name="email" placeholder="Votre adresse mail" required/>                  
+                  <textarea id="textArea" name="message" placeholder="Entrer votre message" required></textarea>
               
                   <div id="main">
                     <button id="lnch" type="button" value="Send" >Send</button>
@@ -276,9 +276,10 @@ $(window).on("load", function() {
 //send button animation
 //if an error on somethings else
 
+// revoir message erreur txt
 
 $(function submitAnimation() {
-    const name = document.querySelector("#name")
+    const nom = document.querySelector("#nom")
     const emailAdress = document.querySelector("#email")
     const text = document.querySelector("#textArea")
     const emailPattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
@@ -286,7 +287,7 @@ $(function submitAnimation() {
     $("#lnch").on("click", function() {
 
         // Check if the name field is empty or contains a number
-        if (name.value == "" || (/\d/.test(name.value))) {
+        if (nom.value == "" || (/\d/.test(nom.value))) {
             swal("Error !", "Please enter a valid name !", "error");
             return;
         }
