@@ -1,9 +1,3 @@
-@font-face {
-    font-family: "Agustina";
-    src: url(../fonts/Agustina.woff);
-}
-
-
 /*CSS variable declaration for light/dark mode*/
 
 html[data-theme="light"] {
@@ -23,7 +17,7 @@ html[data-theme="light"] {
     --col-icon-twitter: #1da1f2;
     --col-icon-dribbble: #ea4c89;
     --col-icon-linkedin: #0e76a8;
-    --col-icon-kaggle: #41aff3;
+    --col-icon-kaggle: green;
     --col-icon-github: #24292e;
     --col-icon-instagram: rgb(201, 94, 174);
     --col-icon-mail: rgb(209, 82, 82);
@@ -51,7 +45,7 @@ html[data-theme="dark"] {
     --col-icon-twitter: #1da1f2;
     --col-icon-dribbble: #ea4c89;
     --col-icon-linkedin: #0e76a8;
-    --col-icon-kaggle: #41aff3;
+    --col-icon-kaggle: green;
     --col-icon-github: #24292e;
     --col-icon-instagram: rgb(201, 94, 174);
     --col-icon-mail: rgb(209, 82, 82);
@@ -73,7 +67,7 @@ html[data-theme="dark"] {
 }
 
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px #bb86fc;
+    -webkit-box-shadow: inset 0 0 6px green;
     border-radius: 2px;
     background: #f1f1f1;
 }
@@ -81,8 +75,8 @@ html[data-theme="dark"] {
 ::-webkit-scrollbar-thumb {
     border-radius: 2px;
     max-height: 10px;
-    -webkit-box-shadow: inset 0 0 6px #bb86fc;
-    background: #bb86fc;
+    -webkit-box-shadow: inset 0 0 6px green;
+    background: green;
     transition: 0.3s;
 }
 
@@ -118,7 +112,7 @@ body {
 #btnScrollToTop {
     width: 50px;
     height: 50px;
-    background-color: #bb86fc;
+    background-color: green;
     color: #fff;
     margin: 8px;
     border: none;
@@ -231,9 +225,10 @@ html {
 }
 
 .navbar-brand {
-    font-family: Agustina;
+    font-family: 'BARNICE Free Trial', sans-serif;
     font-size: 30px;
     font-weight: bold;
+    color: green;
 }
 
 .navbar {
@@ -282,7 +277,7 @@ html {
 .dark_toggler:checked:before {
     transform: translate(150%);
     transition: all 0.9s;
-    background-color: #bb86fc;
+    background-color: green;
 }
 
 
@@ -403,7 +398,7 @@ html[light-mode="dark"] {
         margin-right: auto;
         bottom: 0;
         width: 32%;
-        border-bottom: 3px solid #6a00bb;
+        border-bottom: 3px solid green
     }
     .nav-item-hover::after {
         content: "";
@@ -413,7 +408,7 @@ html[light-mode="dark"] {
         height: 0.15em;
         bottom: 0;
         width: 0%;
-        background-color: #6a00bb;
+        background-color: green;
         transition: all ease-in-out 280ms;
     }
     .nav-item:hover::after {
@@ -439,7 +434,7 @@ html[light-mode="light"] .nav-link {
 }
 
 html[light-mode="light"] .nav-link:hover {
-    color: rgb(106, 0, 187) !important;
+    color: green !important;
 }
 
 html[light-mode="light"] .navbar-brand:hover {
@@ -807,7 +802,7 @@ Contact Form In Footer
     font-size: 25px;
     font-weight: 200;
     line-height: 22px;
-    border-bottom: 3px solid #bb86fc;
+    border-bottom: 3px solid green;
 }
 
 .form-header {
@@ -836,7 +831,7 @@ form {
 }
 
 .form-style-6 h1 {
-    background: #bb86fc;
+    background: green;
     font-size: 140%;
     font-weight: 300;
     text-align: center;
@@ -866,7 +861,7 @@ form {
     background: transparent;
     margin-bottom: 4%;
     border: #000;
-    border-bottom: 2px solid #bb86fc;
+    border-bottom: 2px solid green;
     padding: 3%;
     color: rgb(107, 105, 105);
     font: 95% Arial, Helvetica, sans-serif;
@@ -883,9 +878,9 @@ form {
 .form-style-6 input[type="url"]:focus,
 .form-style-6 textarea:focus,
 .form-style-6 select:focus {
-    box-shadow: 0 0 5px #bb86fc;
+    box-shadow: 0 0 5px green;
     padding: 3%;
-    border: 1px solid #bb86fc;
+    border: 1px solid green;
     border-radius: 2px;
 }
 
@@ -897,8 +892,8 @@ form {
     width: 100%;
     margin-top: 2rem;
     padding: 3%;
-    background: #bb86fc;
-    border-bottom: 2px solid #bb86fc;
+    background: green;
+    border-bottom: 2px solid green;
     border-radius: 23px;
     border-top-style: none;
     border-right-style: none;
@@ -909,7 +904,7 @@ form {
 
 .form-style-6 input[type="submit"]:hover,
 .form-style-6 input[type="button"]:hover {
-    background: #6a00bbd2;
+    background: green;
     ;
 }
 
@@ -1041,7 +1036,7 @@ button {
     border-radius: 50px;
     border-style: none;
     transition: 0.5s ease background-color, 0.5s ease box-shadow;
-    background: #bb86fc;
+    background: green;
 }
 
 #lnch_btn {

@@ -39,7 +39,7 @@ html {
 /*color of education page heading*/
 
 .edu_background {
-  color: #4e00bb;
+  color: green;
 }
 
 /* -----Education Section CSS----- */
@@ -367,7 +367,7 @@ h1 {
 }
 
 header {
-  background: #3F51B5;
+  background: green;
   color: #FFFFFF;
   padding: 150px 0;
 }
@@ -387,7 +387,7 @@ header p {
 /* Draws line */
 .timeline::before {
   content: "";
-  background: #C5CAE9;
+  background: #b5d9be;
   width: 5px;
   height: 95%;
   position: absolute;
@@ -449,7 +449,7 @@ header p {
   display: flex;
   flex-direction: row;
   align-items: center;
-   background-image: linear-gradient(147deg, #545b62a8, black);
+  background-image: linear-gradient(147deg, white, rvb(251,251,240));
   color: white;
 }
 
@@ -468,7 +468,7 @@ header p {
 .timeline-img {
   width: 30px;
   height: 30px;
-  background: #3F51B5;
+  background: green;
   border-radius: 50%;
   position: absolute;
   left: 50%;
@@ -477,7 +477,7 @@ header p {
 }
 
 .bnt-more {
-  background: #3F51B5;
+  background: green;
   color: #FFFFFF;
   padding: 8px 20px;
   text-transform: uppercase;
@@ -534,7 +534,7 @@ header p {
 blockquote {
   margin-top: 30px;
   color: #757575;
-  border-left-color: #3F51B5;
+  border-left-color: green;
   padding: 0 20px;
 }
 
@@ -550,7 +550,18 @@ blockquote {
 
 .alignment{
   padding-left: 20px;
-  
+}
+
+.alignment h3{
+  color: black;
+}
+
+.alignment h6{
+  color: black;
+}
+
+.alignment li{
+  color: black;
 }
 
     /* Media Query  header/footer */
