@@ -63,7 +63,7 @@ let footer = $(`
         <div class="col-lg-6 col-md-12 mb-4 mb-md-0 form-comtainer">
           <div class="form-style-6">
              <div class="form-header">
-                <h6 class="display">Get in Touch</h6>
+                <h6 class="display">Restons en contact</h6>
               </div>
                 <form name="form1" action="https://script.google.com/macros/s/AKfycbxj2qw8HnlVAZ61AZAUj9I8HMmUsPflBBA14NM7gRgO19Z7U29uXtkFKqSRw0oQz_rk_w/exec" method="POST" accept-charset="UTF-8" >
                   <input id="nom" type="text" name="nom" placeholder="Votre nom" required/>
@@ -276,8 +276,6 @@ $(window).on("load", function() {
 //send button animation
 //if an error on somethings else
 
-// revoir message erreur txt
-
 $(function submitAnimation() {
     const nom = document.querySelector("#nom")
     const emailAdress = document.querySelector("#email")
@@ -288,17 +286,17 @@ $(function submitAnimation() {
 
         // Check if the name field is empty or contains a number
         if (nom.value == "" || (/\d/.test(nom.value))) {
-            swal("Error !", "Please enter a valid name !", "error");
+            swal("Erreur !", "Merci d'entrer un nom valide !", "error");
             return;
         }
         // Check if the email field is empty or email is not valid ex: test@@email.com
         else if (emailAdress.value == "" || !(emailPattern.test(emailAdress.value))) {
-            swal("Error !", "Please enter a valid email !", "error");
+            swal("Erreur !", "Merci d'entrer un email valide !", "error");
             return;
         }
         // Check if the message field is empty
         else if (text.value == "") {
-            swal("Error !", "Please enter a valid message !", "error");
+            swal("Erreur !", "Merci d'entrer un message valide !", "error");
             return;
         } else {
 
@@ -310,10 +308,10 @@ $(function submitAnimation() {
                 $("#lnch").addClass("launched").text("SENT");
                 $("#lnch_btn").addClass("launched");
             }, 1500);
-            // Wait for 2.2 seconds so that the send button animation can be fully played before submitting the form
+            // Wait for 1.2 seconds so that the send button animation can be fully played before submitting the form
             setTimeout(() => {
                 document.querySelector('form').submit();
-            }, 2200);
+            }, 1200);
         }
     });
 });
