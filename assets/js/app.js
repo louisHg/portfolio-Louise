@@ -180,6 +180,31 @@ let footer = $(`
 </footer>
 `);
 
+$(document).ready(function() {
+  // updating the color of the swiper bullets (initial update of color)
+  updateColorOfSwiperBullets(localStorage.getItem("lightMode"));
+
+  //function for the "Scroll To Top" button to detect the footer
+  $(window).scroll(function() {
+      //The button will be hidden until we scroll more than the window's height
+      if ($(window).scrollTop() < $(window).height()) {
+          $("#btnScrollToTop").css("visibility", "hidden");
+      } else {
+          $("#btnScrollToTop").css("visibility", "visible");
+          //The button will change it's color when it hits the footer
+          if (
+              $(window).scrollTop() + $(window).height() >
+              $(document).height() - 838
+          ) {
+              // 838 should be changed if footer's height is changed so that the button changes it's color exactly when it hits the footer (preferably 14 less than the computer height of the footer)
+              $("#btnScrollToTop").css("background-color", "green");
+          } else {
+              $("#btnScrollToTop").css("background-color", "green");
+          }
+      }
+  });
+});
+
 //"Scroll to top" button
 let upArrow = $(`
   <button id="btnScrollToTop" onclick="scrollToTop()"><i class="fas fa-2x fa-angle-up"></i></button>
@@ -218,6 +243,16 @@ $(function() {
     });
 });
 
+// function to update swiper bullets
+function updateColorOfSwiperBullets(lightMode) {
+  document.querySelectorAll(".swiper-pagination-bullet").forEach((bullet) => {
+      if (lightMode == "light") {
+          bullet.style.backgroundColor = "blue";
+      } else {
+          bullet.style.backgroundColor = "white";
+      }
+  });
+}
 // function for toggling hamburger is-active class
 
 $(function() {
