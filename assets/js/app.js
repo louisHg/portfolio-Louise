@@ -27,7 +27,7 @@ let header = $(`
    <li class="nav-item nav-item-hover"><a class="nav-link" href="design.html">Mes projets</a></li>
    <li class="nav-item nav-item-hover"><a class="nav-link" href="techstack.html">Mes compétences</a></li>
    <li class="nav-item nav-item-hover"><a class="nav-link" href="education.html">Parcours</a></li>
-   <li class="nav-item nav-item-hover"><a class="nav-link" href="https://hashnode.com/" target="_blank">Blogs</a></li>
+   <li class="nav-item nav-item-hover"><a class="nav-link" href="./assets/docs/CV.pdf" download target="_blank">Mon CV</a></li>
    <li class="nav-item">
    </li>
   </ul>
