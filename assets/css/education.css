@@ -39,7 +39,7 @@ html {
 /*color of education page heading*/
 
 .edu_background {
-  color: green;
+  color: #1c7a43;
 }
 
 /* -----Education Section CSS----- */
@@ -367,7 +367,7 @@ h1 {
 }
 
 header {
-  background: green;
+  background: #1c7a43;
   color: #FFFFFF;
   padding: 150px 0;
 }
@@ -468,7 +468,7 @@ header p {
 .timeline-img {
   width: 30px;
   height: 30px;
-  background: green;
+  background: #1c7a43;
   border-radius: 50%;
   position: absolute;
   left: 50%;
@@ -477,7 +477,7 @@ header p {
 }
 
 .bnt-more {
-  background: green;
+  background: #1c7a43;
   color: #FFFFFF;
   padding: 8px 20px;
   text-transform: uppercase;
@@ -534,14 +534,13 @@ header p {
 blockquote {
   margin-top: 30px;
   color: #757575;
-  border-left-color: green;
+  border-left-color: #1c7a43;
   padding: 0 20px;
 }
 
 .date {
-  background: orange;
   display: inline-block;
-  color: #FFFFFF;
+  color: black;
   padding: 10px;
   position: absolute;
   top: 0;

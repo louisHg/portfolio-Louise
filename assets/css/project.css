@@ -36,7 +36,7 @@ body {
 /*color of projects page heading*/
 
 .my_projects {
-  color: green;
+  color: #1c7a43;
 }
 
 /*For Changing background color of body according to theme*/
@@ -803,7 +803,7 @@ SVG ANIMATIONS PROJECT PAGE
   transform-origin: 736.882px 386px;
 }
 
-#ku.svgmate #Man_screen .greenscreen,
+#ku.svgmate #Man_screen .#1c7a43screen,
 #ku.svgmate #Man_screen .redscreen,
 #ku.svgmate #Man_screen .screenbutton {
   animation-name: manscreenpopup;
@@ -813,17 +813,17 @@ SVG ANIMATIONS PROJECT PAGE
   transform-origin: 526.882px 383px;
 }
 
-#ku.svgmate #Man_screen .greenscreen,
+#ku.svgmate #Man_screen .#1c7a43screen,
 #ku.svgmate #Man_screen .redscreen {
   animation-duration: 3s;
 }
 
-#ku.svgmate #Man_screen .greenscreen {
+#ku.svgmate #Man_screen .#1c7a43screen {
   animation-duration: 3.3s;
 }
 
 #ku.svgmate #Man_screen,
-#ku.svgmate #Man_screen .greenscrmove,
+#ku.svgmate #Man_screen .#1c7a43scrmove,
 #ku.svgmate #Man_screen .redskmove,
 #ku.svgmate .womscreenmove {
   animation-name: manscreenfloat;
@@ -832,12 +832,12 @@ SVG ANIMATIONS PROJECT PAGE
   animation-timing-function: ease-in-out;
 }
 
-#ku.svgmate #Man_screen .greenscrmove,
+#ku.svgmate #Man_screen .#1c7a43scrmove,
 #ku.svgmate #Man_screen .redskmove {
   animation-duration: 6s;
 }
 
-#ku.svgmate #Man_screen .greenscrmove {
+#ku.svgmate #Man_screen .#1c7a43scrmove {
   animation-duration: 7.2s;
 }
 
