@@ -4,7 +4,7 @@ tsParticles.load("particles-js", {
   emitters: [
     {
       life: {
-        duration: 5,
+        duration: 2,
         count: 1,
       },
       position: {
@@ -19,7 +19,7 @@ tsParticles.load("particles-js", {
     },
     {
       life: {
-        duration: 5,
+        duration: 2,
         count: 1,
       },
       position: {
