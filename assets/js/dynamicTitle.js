@@ -18,14 +18,14 @@ window.onload = function() {
     document.addEventListener("visibilitychange", function(e) {
         if (!document.hidden) {
             document.title = pageTitle;
-            favicon.href = "./assets/images/dp_female.svg";
+            favicon.href = "./ assets/images/photo_originalv2.png";
         }
     });
 
     function toggle() {
         if (document.title === attentionMessage) {
             document.title = pageTitle;
-            favicon.href = "./assets/images/dp_female.svg";
+            favicon.href = "./ assets/images/photo_originalv2.png";
         } else {
             document.title = attentionMessage;
             favicon.href = "./assets/images/folded.png";
