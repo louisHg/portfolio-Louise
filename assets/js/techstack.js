@@ -5,54 +5,44 @@ AOS.init();
 const techStackCards = document.querySelector(".techstack-box");
 const techStack = [
   {
+    langImage: "assets/images/techstack-page/adobe_illustrator.png",
+    langName: "Adobe Illustrator",
+    langDesc: "<li>Tracé et image vectoriel, création d’illustration, de pictogrammes, de logos ect...</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/adobe_indesign.png",
+    langName: "Adobe Indesign",
+    langDesc: "<li>Composer des mise en page à l’aide de repère et de grille</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/adobe_photoshop.png",
+    langName: "Adobe Photoshop",
+    langDesc: "<li>Retouche de photo, détourage de visuel, recadrage, effet ect...</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/adobe_after_effects.png",
+    langName: "Adobe After Effects",
+    langDesc: "<li>Animer des éléments graphiques, régler leur position ou leur échelle pour créer le mouvement</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/adobe_media_encoder.png",
+    langName: "Adobe Media Encoder",
+    langDesc: "<li>Convertir un fichier After Effects en fichier mp4</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/adobe_XD.png",
+    langName: "Adobe XD",
+    langDesc: "<li>Conception de maquette, wireframe et zoning</li>",
+  },
+  {
     langImage: "assets/images/techstack-page/html.png",
     langName: "HyperText Markup Language",
-    langDesc: "<li>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser</li>",
+    langDesc: "<li>HyperText Markup Language, ou HTML est un langage utilisé pour modeler et structurer une page web</li>",
   },
   {
     langImage: "assets/images/techstack-page/css.png",
     langName: "Cascading Style Sheets",
-    langDesc: "<li>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML</li>",
-  },
-  {
-    langImage: "assets/images/techstack-page/javascript.png",
-    langName: "JavaScript",
-    langDesc: "<li>JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS</li>",
-  },
-  {
-    langImage: "assets/images/techstack-page/node.png",
-    langName: "Node",
-    langDesc: "<li>Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser</li>",
-  },
-  {
-    langImage: "assets/images/techstack-page/python.png",
-    langName: "Python",
-    langDesc: "<li>Python is an interpreted high-level general-purpose programming language</li>",
-  },
-  {
-    langImage: "assets/images/techstack-page/cpp.png",
-    langName: "C++",
-    langDesc: "<li>C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or C with Classes</li>",
-  },
-  {
-    langImage: "assets/images/techstack-page/git.png",
-    langName: "Git",
-    langDesc: "<li>Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development.</li>",
-  },
-  {
-    langImage: "assets/images/techstack-page/bootstrap.png",
-    langName: "Bootstrap",
-    langDesc: "<li>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development</li>",
-  },
-  {
-    langImage: "assets/images/techstack-page/react.png",
-    langName: "React",
-    langDesc: "<li>React is a free and open-source front-end JavaScript library for building user interfaces based on UI components</li>",
-  },
-  {
-    langImage:"assets/images/techstack-page/c.png",
-    langName:"C",
-    langDesc:"<li>C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system</li>"
+    langDesc: "<li>Cascading Style Sheets ou CSS sert à embellir le code HTTP, pour rendre la page WEB plus jolie et attrayante</li>",
   },
 ];
 
@@ -80,5 +70,38 @@ const displayTechStacksCards = () => {
       `}).join('');
   techStackCards.innerHTML = entireCardTemplate;
 };
+
+//function to scroll to 1st stage 
+const scrollTo1stLvl = () => {
+  window.scrollTo({
+      top: $(document).height()*0.18,
+      behavior: "smooth",
+  });
+};
+
+//function to scroll to 2nd stages 
+const scrollTo2ndLvl = () => {
+  window.scrollTo({
+      top: $(document).height()*0.325,
+      behavior: "smooth",
+  });
+};
+
+//function to scroll to 3rd stages 
+const scrollTo3rdLvl = () => {
+  window.scrollTo({
+      top: $(document).height()*0.47,
+      behavior: "smooth",
+  });
+};
+
+//function to scroll to 4th stages 
+const scrollTo4thLvl = () => {
+  window.scrollTo({
+      top: $(document).height()*0.6,
+      behavior: "smooth",
+  });
+};
+
 // displayTechStacksCards(techStack)
 document.addEventListener("DOMContentLoaded", displayTechStacksCards);
